@@ -1,11 +1,11 @@
-void floorCallUp()
+void callFloorUp()
 {
   if (button(3) == HIGH) {
     if (request == 0) {
       request = 1;
       goToFloor = 1;
       floorLED = 1;
-      moveElevator(); //Move the motor
+      elevatorMove(); //Move the motor
       floorLED = 0;
       LED();
       Serial.println("At 1st Floor");
@@ -20,7 +20,7 @@ void floorCallUp()
       request = 1;
       goToFloor = 2;
       floorLED = 3;
-      moveElevator(); //Move the motor
+      elevatorMove(); //Move the motor
       goToFloorUp = 0;
       floorLED = 0;
       LED();

@@ -1,4 +1,4 @@
-void floorCallDown()
+void callFloorDown()
 {
 
   if (button(4) == HIGH) {
@@ -7,7 +7,7 @@ void floorCallDown()
       goToFloor = 2;
       request = 1;
       floorLED = 2;
-      moveElevator(); //Move the motor
+      elevatorMove(); //Move the motor
       goToFloorDown = 0;
       floorLED = 0;
       LED();
@@ -33,7 +33,7 @@ void floorCallDown()
       request = 1;
       goToFloor = 3;
       floorLED = 4;
-      moveElevator(); //Move the motor
+      elevatorMove(); //Move the motor
       floorLED = 0;
       LED();
       Serial.println("At 3rd Floor");

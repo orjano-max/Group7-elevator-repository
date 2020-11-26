@@ -20,9 +20,9 @@ void idle()
 
   while (request == 0) {
     //Wait for input
-    cabinCall();
-    floorCallUp();
-    floorCallDown();
+    callCabin();
+    callFloorUp();
+    callFloorDown();
 
     lcd.print(" ");
     lcd.setCursor(15, 1);

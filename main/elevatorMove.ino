@@ -3,7 +3,7 @@
    The moveElevator() function moves the elevator to the right floor
    and stops it
 */
-void moveElevator()
+void elevatorMove()
 {
 
   lcd.clear();
@@ -13,16 +13,22 @@ void moveElevator()
   lcd.print(goToFloor);
 
   motorSpeed = motorSpeedSet; // Set motor Speed to value from main
-
-  motorDir = upOrDown(); // Set motor Direction
+  
+  // Set motor Direction
+  if (currentFloor < goToFloor) {
+    motorDir = 1;
+  }
+  else {
+    motorDir = 0;
+  } 
 
   
 
   while (true) {
 
-    cabinCall();
-    floorCallUp();
-    floorCallDown();
+    callCabin();
+    callFloorUp();
+    callFloorDown();
     driveMotor();
     LED();
 

@@ -6,7 +6,7 @@
    of sending elevators to the right floor
 */
 
-void cabinCall()
+void callCabin()
 {
 
   if (button(0) == HIGH)
@@ -14,7 +14,7 @@ void cabinCall()
     if (request == 0) {
       request = 1;
       goToFloor = 1;
-      moveElevator(); //Move the motor
+      elevatorMove(); //Move the motor
       Serial.println("At 1st Floor");
       doorsOpenClose(); //Opening Doors
       idle();  //Going back to idle state
@@ -27,7 +27,7 @@ void cabinCall()
     {
       request = 1;
       goToFloor = 2;
-      moveElevator();
+      elevatorMove();
       Serial.println("At 2nd Floor");
       doorsOpenClose(); //Opening Doors
       idle();  //Going back to idle state
@@ -60,7 +60,7 @@ void cabinCall()
     {
       request = 1;
       goToFloor = 3;
-      moveElevator();
+      elevatorMove();
       Serial.println("At 3rd Floor");
       doorsOpenClose(); //Opening Doors
       idle();  //Going back to idle state
