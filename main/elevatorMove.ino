@@ -1,4 +1,3 @@
-
 /*
    The moveElevator() function moves the elevator to the right floor
    and stops it
@@ -13,16 +12,16 @@ void elevatorMove()
   lcd.print(goToFloor);
 
   motorSpeed = motorSpeedSet; // Set motor Speed to value from main
-  
+
   // Set motor Direction
   if (currentFloor < goToFloor) {
     motorDir = 1;
   }
   else {
     motorDir = 0;
-  } 
+  }
 
-  
+
 
   while (true) {
 

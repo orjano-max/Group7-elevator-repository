@@ -7,7 +7,7 @@
 void emergencyStop () {
   lcd.clear();
   lcd.print("EMERGENCY STOP!");
-  lcd.setCursor(0,1);
+  lcd.setCursor(0, 1);
   lcd.print("Press 'Reset'");
 
   //Set request to 0
@@ -22,8 +22,8 @@ void emergencyStop () {
   digitalWrite(stepperEnableB, LOW);
   digitalWrite(stepperPhaseA, LOW);
   digitalWrite(stepperPhaseB, LOW);
-  
-  while(true){
+
+  while (true) {
     //Do nothing
     //Reset elevator to go out of emergency stop
   }

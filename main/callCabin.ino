@@ -1,5 +1,3 @@
-
-
 /*
    The cabinCall() function checks if the cabin buttons are
    pressed and starts the sequence

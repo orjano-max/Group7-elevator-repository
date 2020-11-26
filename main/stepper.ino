@@ -1,9 +1,8 @@
-
 /*
- * The Stepper function turns the stepper motor
- * a given number of steps.
- * The stepper RPM is set in main
- */
+   The Stepper function turns the stepper motor
+   a given number of steps.
+   The stepper RPM is set in main
+*/
 void stepper(int steps) {
 
   int timerStep = 60 / stepperRPM * 5;

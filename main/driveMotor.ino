@@ -1,4 +1,3 @@
-
 /*
    The driveMotor() turns the motor at speed set in main
    and in the given direction

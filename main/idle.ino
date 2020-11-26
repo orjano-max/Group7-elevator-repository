@@ -1,4 +1,3 @@
-
 /*
    The idle() function prints a message that the elevator is idle
    and runs the call funtion to check for inputs
@@ -36,24 +35,24 @@ void idle()
       lcd.print("Elevator under");
       lcd.setCursor(0, 1);
       lcd.print("1st Floor!!");
-      
+
       while (currentFloor < 1) {
         motorDir = 1;
         motorSpeed = 50;
-        driveMotor();  
+        driveMotor();
       }
 
       motorSpeed = 0;
       driveMotor();
-      
+
       lcd.clear();
       lcd.print("Idle");
       lcd.setCursor(0, 1);
       lcd.print("Current Floor: ");
       lcd.setCursor(15, 1);
     }
-    
-    
+
+
     if (currentFloor > 3) {
       lcd.clear();
       lcd.print("Elevator above");
@@ -63,7 +62,7 @@ void idle()
       while (currentFloor > 3) {
         motorDir = 0;
         motorSpeed = 50;
-        driveMotor();   
+        driveMotor();
       }
 
       motorSpeed = 0;
@@ -73,8 +72,8 @@ void idle()
       lcd.print("Idle");
       lcd.setCursor(0, 1);
       lcd.print("Current Floor: ");
-      lcd.setCursor(15, 1);   
+      lcd.setCursor(15, 1);
     }
-    
+
   }
 }
