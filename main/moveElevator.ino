@@ -16,7 +16,7 @@ void moveElevator()
 
   motorDir = upOrDown(); // Set motor Direction
 
-  Serial.println(motorDir);
+  
 
   while (true) {
 
@@ -31,7 +31,7 @@ void moveElevator()
       LED();
       motorSpeed = 0;
       driveMotor();
-      door();
+      doorsOpenClose();
       request = 1;
 
       delay(500);
@@ -45,6 +45,7 @@ void moveElevator()
       motorSpeed = motorSpeedSet;
       driveMotor();
       goToFloorUp = 0;
+      floorLED = 0;
     }
 
     if (currentFloor == goToFloorDown && motorDir == 0 && goToFloor != goToFloorDown && goToFloorDown != 0)
@@ -52,7 +53,7 @@ void moveElevator()
       LED();
       motorSpeed = 0;
       driveMotor();
-      door();
+      doorsOpenClose();
       request = 1;
 
       delay(500);
@@ -66,6 +67,7 @@ void moveElevator()
       motorSpeed = motorSpeedSet;
       driveMotor();
       goToFloorDown = 0;
+      floorLED = 0;
     }
 
     if (currentFloor >= goToFloor && motorDir == 1 ) {
@@ -82,27 +84,4 @@ void moveElevator()
   motorSpeed = 0;
   driveMotor();
 
-}
-
-
-/*
-   The upOrDown() function checks whether the elevator has to go up or down
-*/
-int upOrDown() {
-  if (currentFloor < goToFloor) {
-    return 1;
-  }
-  else {
-    return 0;
-  }
-}
-
-
-/*
-   The driveMotor() turns the motor at speed set in main
-   and in the given direction
-*/
-void driveMotor() {
-  digitalWrite(phase, motorDir);
-  analogWrite(enable, motorSpeed);
 }

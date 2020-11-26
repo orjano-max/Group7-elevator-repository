@@ -75,11 +75,11 @@ void LED () {
   }
   
   //If statement tha lights up an LED on floor that requests elevator Up
-  if (request == 1 && floorLED != 0 && goToFloorUp == goToFloor) {
+  if (request == 1 && floorLED != 0 && goToFloorUp == 0) {
     digitalWrite(44 + floorLED, HIGH);
   }
   //If statement tha lights up an LED on floor that requests elevator Down
-  if (request == 1 && floorLED != 0 && goToFloorDown == goToFloor) {
+  if (request == 1 && floorLED != 0 && goToFloorDown == 0) {
     digitalWrite(44 + floorLED, HIGH);
   }
 
