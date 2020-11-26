@@ -1,9 +1,14 @@
+/*
+   The LED() function checks current floor, and lights up the right light indicating that floor
+   It also lights up an LED representing target floor.
+   If a button is pressed on a certain floor, this button lights up(like the 2nd. floor Up button)
+*/
 
-// Function that sets LEDs based on currentFloor and goToFloor
-void LED () {
+void LED() {
 
-  //if and else if statements that ligths up LED for current floor
-  if (currentFloor == 1) {
+  //If- and else if-statements that ligths up LED for current floor
+  if (currentFloor == 1) 
+  {
     digitalWrite(42, HIGH);
     digitalWrite(43, LOW);
     digitalWrite(44, LOW);
@@ -54,32 +59,39 @@ void LED () {
     digitalWrite(48, LOW);
     digitalWrite(49, LOW);
   }
+  
 
-
-  //if statement that lights up led of floor the elevator are supposed to go to
+  // If-statement that lights up led of floor the target floor(where the elevator is going)
   if (request == 1)
   {
     digitalWrite(41 + goToFloor, HIGH);
   } 
+
   
-  //If statement tha lights up light in cabin if there i request to stop at a floor while moving up
+  // If-statement that lights up light in cabin if there is request to stop at a floor while moving UP
   if (motorDir == 1 && request == 1 && goToFloorUp != goToFloor) 
   {
     digitalWrite(41+goToFloorUp, HIGH);
   }
 
-  //If statement tha lights up light in cabin if there i request to stop at a floor while moving down
+
+  //If statement that lights up light in cabin if there i request to stop at a floor while moving DOWN
   if (motorDir == 0 && request == 1 && goToFloorDown != goToFloor) 
   {
     digitalWrite(41+goToFloorDown, HIGH);
   }
+
   
-  //If statement tha lights up an LED on floor that requests elevator Up
+  //If-statement that lights up an LED on floor that requests elevator UP
   if (request == 1 && floorLED != 0 && goToFloorUp == 0) {
     digitalWrite(44 + floorLED, HIGH);
+    
   }
-  //If statement tha lights up an LED on floor that requests elevator Down
-  if (request == 1 && floorLED != 0 && goToFloorDown == 0) {
+
+  
+  //If-statement that lights up an LED on floor that requests elevator DOWN
+  if (request == 1 && floorLED != 0 && goToFloorDown == 0) 
+  {
     digitalWrite(44 + floorLED, HIGH);
   }
 
