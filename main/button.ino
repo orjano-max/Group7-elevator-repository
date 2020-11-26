@@ -1,13 +1,16 @@
 /*
- Function that lights up an LED and returns a HIGH value if pressed.
- this is used for cabin buttons, to request elevator at floor.
+ The button() function, returns HIGH if a button is pressed.
+ This function is used to determine wich floor a button is pressed at
  */
 bool button(int a)
 {
-  if (digitalRead(29 - a) == HIGH) {
+  
+  if (digitalRead(29 - a) == HIGH)
+  {
     return HIGH;
   }
   else {
     return LOW;
   }
+  
 }
