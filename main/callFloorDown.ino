@@ -28,8 +28,8 @@ void callFloorDown()
     }
     else if (motorDir == 0 && request == 1 && goToFloor != 2)
     {
-      goToFloorDown = 2;         // Decides where to stop elevator
-      floorLED = 2;              // Variable to make LED for this button to light up (reset in elevatorMove() function)
+      goToFloorDown = 2; // Decides where to stop elevator
+      floorLED = 2;      // Variable to make LED for this button to light up (reset in elevatorMove() function)
 
       // Displaying "Stopping" message
       lcd.clear();
