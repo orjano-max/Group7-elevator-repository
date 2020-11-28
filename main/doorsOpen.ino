@@ -1,8 +1,8 @@
 /*
-   The doorsClose() function is used to close the doors.
-   The stepper motor simulates the doors, it turns clockwise to open, and counter-clockwise to close.
-   The joystick simulates "doors open" and "doors close" sensor(pull joystick to the left for close, and right for open).
-   The stepper motor will turn until it gets feedback that it is open.
+  The doorsOpen() function is used to open the doors.
+  The stepper motor simulates the doors, it turns clockwise to open, and counter-clockwise to close.
+  The joystick simulates "doors open" and "doors close" sensor(pull joystick to the left for close, and right for open).
+  The stepper motor will turn until it gets feedback that it is open.
 */
 void doorsOpen() 
 {

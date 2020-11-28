@@ -1,11 +1,11 @@
 /*
-   The doorsClose() function is used to close the doors.
-   It has a safety feature which makes it open the doors if an "overload switch" is pressed.
-   This "overload switch" is supposed to represent the for example a foot that gets stuck between the doors.
-   The overload switch is the button marked as "0" on the "All In One Servo lab".
-   The stepper motor simulates the doors, it turns clockwise to open, and counter-clockwise to close.
-   The joystick simulates "doors open" and "doors close" sensor(pull joystick to the left for close, and right for open).
-   The stepper motor will turn until it gets feedback that it is closed/open.
+  The doorsClose() function is used to close the doors.
+  It has a safety feature which makes it open the doors if an "overload switch" is pressed.
+  This "overload switch" is supposed to represent the for example a foot that gets stuck between the doors.
+  The overload switch is the button marked as "0" on the "All In One Servo lab".
+  The stepper motor simulates the doors, it turns clockwise to open, and counter-clockwise to close.
+  The joystick simulates "doors open" and "doors close" sensor(pull joystick to the left for close, and right for open).
+  The stepper motor will turn until it gets feedback that it is closed/open.
 */
 void doorsClose()
 {

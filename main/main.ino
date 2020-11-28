@@ -1,7 +1,20 @@
 /*
    This is the elevator program for Group 7 in MAS220, Fall 2020
    the group consists of the members: Ørjan Øvsthus, Dan Albrigtsen and Hipolit Edward Wilczek.
-   the main tab contains global variables and includes, setup() and loop().
+   The main tab contains global variables, includes, setup() and loop().
+  This is where most input and output pins are initialized and where the setup of servo motor, stepper motor,
+  LCD display, encoder are initialized and set up.
+
+  Vaiables that affect the programs behaviour can be set here. Initialization of different components
+  are placed near each other and described in the program.
+  You can for example change the RPM of the steppermotor or the servo motor by manipulation the "stepperRPM"(stepper RPM)
+  and "motorSpeedSet"(servo RPM) variables, and the countsPerFloor variable for the encoder, sets the "spacing" between the floors.
+  Other variables and their purpose are well described in the program.
+
+  The Setup() loop contains setup for different components like the LCD display and Stepper motor.
+  This loop is well documented in the program.
+
+  The loop(), starts the program, sends it to the idle() function.
 */
 
 //Initializing LCD Display

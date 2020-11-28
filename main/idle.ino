@@ -1,7 +1,6 @@
 /*
-   The idle() function prints a message that the elevator is idle
-   and runs the call funtions to check for requests.
-   It also has a feature that makes the elevator readjust itself if it is below 1st floor or above 3rd floor
+  The idle() function prints a message that the elevator is idle and runs the call funtions to check for requests.
+  It also has a feature that makes the elevator readjust itself if it is below 1st floor or above 3rd floor.
 */
 void idle()
 {

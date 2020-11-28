@@ -1,8 +1,8 @@
 /*
-   The emergencyStop() function stops the motors at any time.
-   This is because the emergencyStopPin is an interrupt pin.
-   Request is set to 0.
-   Reset the elevator with the "Reset" button to go out of emergency mode
+  The emergencyStop() function stops the motors at any time.
+  This is because the emergencyStopPin is an interrupt pin.
+  Request is set to 0.
+  Reset the elevator with the "Reset" button to go out of emergency mode
 */
 void emergencyStop ()
 {

@@ -1,10 +1,10 @@
 /*
    The callFloorUp() function checks if the floor "up" buttons are
-   pressed and starts the sequence of sending the elevator to the right floor.
-   It also determines if the elevator is moving, and what direction it is moving.
-   This is done in order to determine how, or if ist should send the elevator to the floor that is requested.
-   There is no real queuing strategy other than the ability to stop at second floor while moving.
-   Button(3) and button(5) is the floor "up" buttons on 2nd and 3rd floor
+  pressed and starts the sequence of sending the elevator to the right floor.
+  It also determines if the elevator is moving, and what direction it is moving.
+  This is done in order to determine how, or if ist should send the elevator to the floor that is requested.
+  There is no real queuing strategy other than the ability to stop at second floor while moving.
+  Button(3) and button(5) is the floor "up" buttons on 2nd and 3rd floor
 */
 void callFloorUp()
 {

@@ -1,11 +1,9 @@
 /*
-   The readEncoder() function reads the encoder at any time
-   because encPinB is set up as an interrupt pin.
-   The function starts at any time it detects a high input on the encB pin.
-   The funftion decides which direction the servo motor is turning
-   by checking if both inputs are HIGH at the same time.
-   If encPinA is LOW the moment encPinB turns HIGH, servo turns counter-clockwise.
-   If encPinB is HIGH the moment encPinB turns HIGH, servo turns clockwise.
+  The readEncoder() function reads the encoder at any time because encPinB is set up as an interrupt pin.
+  The function starts at any time it detects a high input on the encB pin.
+  The funftion decides which direction the servo motor is turning by checking if both inputs are HIGH at the same time.
+  If encPinA is LOW the moment encPinB turns HIGH, servo turns counter-clockwise.
+  If encPinB is HIGH the moment encPinB turns HIGH, servo turns clockwise.
 */
 void readEncoder () {
 

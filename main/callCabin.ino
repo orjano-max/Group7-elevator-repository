@@ -1,11 +1,10 @@
 /*
-   The callCabin() function checks if the cabin buttons are
-   pressed and starts the sequence of sending the
-   elevator to the right floor.
-   It also determines if the elevator is moving or not
-   in order to determine how, or if ist should send the elevator to the floor that is requested.
-   There is no real queuing trategy other than the ability to stop at second floor while moving.
-   Button(0)-button(2) is the cabin buttons
+   The callCabin() function checks if the cabin buttons are pressed and starts the sequence of sending the
+  elevator to the right floor.
+  It also determines if the elevator is moving or not in order to determine how,
+  or if ist should send the elevator to the floor that is requested.
+  There is no real queuing trategy other than the ability to stop at second floor while moving.
+  Button(0)-button(2) is the cabin buttons.
 */
 
 void callCabin()

@@ -1,7 +1,7 @@
 /*
    The LED() function checks current floor, and lights up the right light indicating that floor
-   It also lights up an LED representing target floor.
-   If a button is pressed on a certain floor, this button lights up(like the 2nd. floor Up button)
+  It also lights up an LED representing target floor.
+  If a button is pressed on a certain floor, this button lights up(example: the 2nd. floor Up button)
 */
 
 void LED() {

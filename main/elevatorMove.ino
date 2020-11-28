@@ -1,9 +1,8 @@
 /*
-   The elevatorMove() function moves the elevator to the right floo and stops it.
-   It also detects if there are requests to stop at second floor while moving,
-   and stops if the direction is right.
-   The servo motor simulates the elevator.
-   Elevator moves UP with Clockwise rotation and DOWN with counter-clockwise rotation.
+  The elevatorMove() function moves the elevator to the right floo and stops it.
+  It also detects if there are requests to stop at second floor while moving, and stops if the direction is right.
+  The servo motor simulates the elevator.
+  Elevator moves UP with Clockwise rotation and DOWN with counter-clockwise rotation.
 */
 void elevatorMove()
 {
