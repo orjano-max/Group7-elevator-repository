@@ -2,6 +2,8 @@
 # Group7-elevator-repository
 This is the readme file describing the elevator code for group 7 in MAS220, fall 2020.
 The group consists of the members: Ørjan Øvsthus, Dan Albrigtsen and Hipolit Edward Wilczek.
+To open the program, use the Arduino IDE and open the "main.ino" file in the "main" folder. 
+The other ".ino" files will show up as tabs in the Arduino IDE
 
 The elavetor program contains descriptions and comments that describe how it is made.
 All functions are divided into its own "tab", except for the initialization, setup() and loop(), these are gathered in the "main" tab.
