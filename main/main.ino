@@ -43,7 +43,7 @@ int motorDir = 1;              // Determines direction of motor, 1 is up and 0 i
 //Servo motor pins:
 int enable = 7;
 int phase = 6;
-int decoy = 5;
+int decay = 5;
 
 //Initializing encoder
 int countsPerFloor = 10000;                      //Set amount of counts encoder needs to move one floor
@@ -65,8 +65,8 @@ void setup() {
   //Setup for Servo motor
   pinMode(enable, OUTPUT);
   pinMode(phase, OUTPUT);
-  pinMode(decoy, OUTPUT);
-  digitalWrite(decoy, LOW);
+  pinMode(decay, OUTPUT);
+  digitalWrite(decay, LOW);
 
   //Setup for Stepper motor
   dac_init();           // Initiate dac library

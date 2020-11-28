@@ -10,7 +10,7 @@ void idle()
   // Prints message if request is 0
   if (request == 0)
   {
-    // Prints "EMERGENCY STOP" message
+    // Prints "idle" message
     Serial.println("Idle, waiting for input");
     lcd.clear();
     lcd.print("Idle");

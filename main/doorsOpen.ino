@@ -10,7 +10,7 @@ void doorsOpen()
   //Enters while loop to turn motor
   while (true) {
 
-    stepper(1); //Starts stepper() function (input "1" will rotate motor 1 "step sequence" in clockwise rotation)
+    stepper(1, stepperRPM); //Starts stepper() function (input "1" will rotate motor 1 "step sequence" in clockwise rotation)
 
     
     doorPosition = analogRead(joyStick); // Reads door position
