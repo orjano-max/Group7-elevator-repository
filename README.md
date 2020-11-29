@@ -5,6 +5,8 @@ The group consists of the members: Ørjan Øvsthus, Dan Albrigtsen and Hipolit E
 To open the program, use the Arduino IDE and open the "main.ino" file in the "main" folder. 
 The other ".ino" files will show up as tabs in the Arduino IDE
 
+(The matlab script and ".txt" files are just used to plot encoder values)
+
 The elavetor program contains descriptions and comments that describe how it is made.
 All functions are divided into its own "tab", except for the initialization, setup() and loop(), these are gathered in the "main" tab.
 
