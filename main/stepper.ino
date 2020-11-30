@@ -9,9 +9,9 @@
   This function does not ramp the stepper motor which is not ideal, but we have tested it up to 60RPM and it works fine.
   Would not reccomend going over 60RPM as the motor might struggle to accellerate up to a high enough speed to follow the magnetic field.
 */
-void stepper(int steps, int RPM) {
+void stepper(int steps) {
 
-  int timerStep = 60 / RPM * 5;
+  int timerStep = 60 / stepperRPM * 5;
 
   if (steps > 0)
   {

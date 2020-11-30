@@ -13,7 +13,7 @@ void doorsClose()
   //Enters while loop to turn motor
   while (true)
   {
-    stepper(-1, stepperRPM); //Starts stepper() function (input "-1" will rotate motor 1 "step sequence" in counter-clockwise rotation)
+    stepper(-1); //Starts stepper() function (input "-1" will rotate motor 1 "step sequence" in counter-clockwise rotation)
 
     // If statement that opens up the doors again if overload switch is triggered
     if (digitalRead(overloadSwitch) == HIGH) {
